@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Recipe Details</title>
+</head>
+<body>
+
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header .nav-bar {
+    margin-top: 10px;
+}
+
+header .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .nav-bar ul li {
+    margin: 0 15px;
+}
+
+header .nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header .nav-bar ul li a:hover {
+    color: #ff7b00;
+}
+
+/* Recipe Details Page */
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 90px;
+}
+
+.recipe-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content {
+    flex: 2;
+}
+
+.recipe-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333;
+
+}
+
+.recipe-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.ingredients, .instructions {
+    margin-top: 30px;
+}
+
+.ingredients h3, .instructions h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.ingredients ul, .instructions ol {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.ingredients li, .instructions li {
+    margin-bottom: 8px;
+}
+
+button {
+    background-color: #ff7b00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e66c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-icon:hover {
+    color: #ff7b00;
+}
+
+footer h5 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+    </style>
+
+    <header>
+        <div class="logo">Foodio Recipes</div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Recipe Details Section -->
+    <div class="recipe-details">
+        <div class="recipe-image">
+            <img src="r4.jfif" alt="Recipe Image">
+        </div>
+        <div class="recipe-content">
+            <h2>Recipe 4: Tasty Paneer Tikka</h2>
+            <br>
+            <p><strong>Preparation Time:</strong> 15 minutes</p>
+            <p><strong>Cooking Time:</strong> 20 minutes</p>
+            <p><strong>Serving:</strong> 4 servings</p>
+            <div class="ingredients">
+                <h3>Ingredients:</h3>
+                <ul>
+
+                    <li>250g paneer (cubed)</li>
+                <li>1/4 cup thick yogurt</li>
+                <li>1 tablespoon ginger-garlic paste</li>
+                <li>1 tablespoon red chili powder</li>
+                <li>1 teaspoon turmeric powder</li>
+                <li>1 teaspoon garam masala</li>
+                <li>1 tablespoon lemon juice</li>
+                <li>1 tablespoon olive oil</li>
+                <li>Salt to taste</li>
+                <li>Fresh coriander leaves for garnish</li>
+                </ul>
+            </div>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>In a mixing bowl, combine yogurt, ginger-garlic paste, red chili powder, turmeric powder, garam masala, lemon juice, olive oil, and salt. Mix well to form a marinade.</li>
+                    <li>Add paneer cubes to the marinade, making sure they are well coated. Let it marinate for at least 15 minutes (or up to 1 hour for more flavor).</li>
+                    <li>Preheat a grill or non-stick pan over medium heat.</li>
+                    <li>Place the marinated paneer cubes on the grill or in the pan. Cook for 3-4 minutes on each side until the paneer is slightly charred and cooked through.</li>
+                    <li>Garnish with fresh coriander leaves and serve hot with mint chutney or a side salad. Enjoy!</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="social-icon"> <i class="fab fa-facebook"></i> </a>
+            <a href="#" class="social-icon"> <i class="fab fa-twitter"></i> </a>
+            <a href="#" class="social-icon"> <i class="fab fa-instagram"></i> </a>
+        </div>
+        <h5>CopyRight © 2025 By Foodio Recipes </h5>
+    </footer>
+  
+    <!-- link to JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
